@@ -1,27 +1,57 @@
 <!DOCTYPE html>
 <html>
 
-<p>I need words here.</p>
 <head>
 
-<meta charset="UTF-8">
-	
-<title>HTML Practice 6 - Tables</title>
+   <meta charset="UTF-8">
 
-<style type="text/css">
+   <title>HTML Practice 6 - Tables</title>
 
+   <style type="text/css">
+      table {
+         border: solid 1px black;
+         width: 550px;
+         text-align: center;
+      }
 
-</style>
+      th {
+         border: solid 1px black;
+         background-color: gray;
+      }
+
+      td {
+         border: solid 1px black;
+      }
+
+      .tablecolor {
+         background-color: #99FF66;
+      }
+
+      .caption {
+         color: #003300;
+      }
+   </style>
+
 </head>
+
 <body>
-<div >
-   <table >
-	
-   </table>
-</div>
+   <div>
+      <table><caption class="caption">My Class Schedule</caption><colgroup class="tablecolor"></colgroup>>
+        
+         <tr>
+            <th>Courses</th> <colgroup span="5"></colgroup>
+               <td>Monday</td>
+               <td>Tuesday</td>
+               <td>Wednesday</td>
+               <td>Thursday</td>
+               <td>Friday</td>
+            </colgroup>
+         </tr>
+      </table>
+   </div>
 
 
 
 </body>
-</html>
 
+</html>
