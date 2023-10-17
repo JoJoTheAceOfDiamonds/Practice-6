@@ -1,57 +1,79 @@
 <!DOCTYPE html>
 <html>
 
+
 <head>
 
-   <meta charset="UTF-8">
+<meta charset="UTF-8">
 
-   <title>HTML Practice 6 - Tables</title>
+<title>HTML Practice 6 - Tables</title>
 
-   <style type="text/css">
-      table {
-         border: solid 1px black;
-         width: 550px;
-         text-align: center;
-      }
+<style type="text/css">
+div{
+   text-align: center;
+}
+table{
+   margin: auto;
+   width: 550px;
+   border: solid 2px #000000;
+   padding: 3px;
+}
+tr{
+   border: solid 1px #000000;
+}
+td{
+   border: solid 1px #000000;
+   padding: 3px;
+   background-color: white;
+}
+th{
+   border: solid 1px black;
+}
+.firstcol{
+   color: #cccccc;
+   
+   width: 25%;
+}
+.secondcol{
+   background-color: #99FF66;
+}
 
-      th {
-         border: solid 1px black;
-         background-color: gray;
-      }
-
-      td {
-         border: solid 1px black;
-      }
-
-      .tablecolor {
-         background-color: #99FF66;
-      }
-
-      .caption {
-         color: #003300;
-      }
-   </style>
-
+</style>
 </head>
-
 <body>
-   <div>
-      <table><caption class="caption">My Class Schedule</caption><colgroup class="tablecolor"></colgroup>>
-        
-         <tr>
-            <th>Courses</th> <colgroup span="5"></colgroup>
-               <td>Monday</td>
-               <td>Tuesday</td>
-               <td>Wednesday</td>
-               <td>Thursday</td>
-               <td>Friday</td>
-            </colgroup>
-         </tr>
-      </table>
-   </div>
+<div >
+   <table>
+      <caption>Class Shcedule</caption>
+      <colgroup class="firstcol" span="1">
+         <colgroup class="secondcol" span="5">
+      <tr>
+         <th>Courses</th>
+         <th>Monday</th>
+         <th>Tuesday</th>
+         <th>Wendnesday</th>
+         <th>Thursday</th>
+         <th>Friday</th>
+      </tr>  
+      <tr>
+       <th>INFO 1120</th>
+      <td></td>
+      <td>9-11</td>
+      <td></td>
+      <td>9-11</td>
+      <td rowspan="2"></td>
+      </tr>
+      <tr>
+         <th>Math 1010</th>
+         <td colspan="4">12-1</td>
+      </tr>
+      <tr>
+         <th>2420</th>
+         <td colspan="5">Online Avaible 24/7</td>
+      </tr>
+   </table>
+</div>
 
 
 
 </body>
-
 </html>
